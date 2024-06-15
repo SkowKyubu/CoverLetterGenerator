@@ -4,8 +4,7 @@
   <img src="https://github.com/SkowKyubu/CoverLetterGenerator/assets/120100522/536455d9-73bc-4162-82c7-73b0d42a6157" alt="letter">
 </p>
 
-Simplify Your Applications by Automating Cover Letter Creation.
-This program is designed for personal use and allows you to generate cover letters with the following structure:
+Generate personalized cover letters instantly by filling out a simple form with details of the job you’re applying for. Receive your cover letter in PDF and DOCX (for additional customization) formats within seconds.
 
 - Introduction
 - Presentation of your skills and background, who you are, and why you are applying
