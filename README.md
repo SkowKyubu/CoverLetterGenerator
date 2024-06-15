@@ -1,7 +1,7 @@
 
 # Cover Letter generator
 <p align="center">
-  <img src="https://github.com/SkowKyubu/CoverLetterGenerator/assets/120100522/dc07b528-0ff0-473b-a0c5-9b346c9a03fc" alt="letter_censored">
+  <img src="https://github.com/SkowKyubu/CoverLetterGenerator/assets/120100522/536455d9-73bc-4162-82c7-73b0d42a6157" alt="letter">
 </p>
 
 Simplify Your Applications by Automating Cover Letter Creation.
