@@ -1,0 +1,70 @@
+{
+    "api_chatgpt": "[API]",
+    "personal_info": {
+        "first_name": "[first name]",
+        "last_name": "[last name]",
+        "phone_number": {
+            "fr": "XX XX XX XX XX",
+            "en": "+33 X XX XX XX XX"
+        },
+        "address": {
+            "fr": "[adresse]",
+            "en": "[adress]"
+        },
+        "city": "[city]",
+        "country": "[country]",
+        "postal_code": "[postal code]",
+        "email": "[email]"
+    },
+    "company_info": {
+        "name": "[company name]",
+        "location": {
+            "country": "[country]",
+            "city": "[city]"
+        },
+        "job": {
+            "name": "[job name]",
+            "contract_type": "[contract type]",
+            "reference": "[job reference]",
+            "description": "[job description]"
+        }
+    },
+    "introduction": {
+        "fr": "Je vous écris pour exprimer mon enthousiasme à l'idée de rejoindre {{company_name}}. Actuellement en stage chez Covéa, un groupe d'assurance français renommé, j'ai acquis des compétences précieuses en IT et science des données.",
+        "en": "I am writing to express my keen interest in a potential opportunity at {{company_name}}. Currently, I am undertaking an internship at Covéa, a reputable French insurance group, where I have been able to develop valuable skills and insights.",
+        "VIE": {
+            "fr": "Cependant, mon ambition me pousse vers des horizons internationaux, ce qui correspond davantage à mes aspirations.",
+            "en": "While I am grateful for the experience and knowledge gained at Covéa, I find myself drawn to pursuits in international matters, a realm that aligns more closely with my aspirations."
+        }
+    },
+    "presentation": {
+        "data science": {
+            "fr": "Mon parcours académique m'a doté de solides compétences en machine learning et en data science. Grâce à mon stage, je perfectionne mon expertise en data engineering et adopte les meilleures pratiques en matière de big data, tout en acquérant une maîtrise des technologies cloud telles que Databricks et Microsoft Azure. Mon engagement dans des projets portant sur la détection d'objets a également approfondi ma compréhension des applications pratiques dans ce domaine.",
+            "en": "My academic background has equipped me with robust skills in machine learning and data science. Through my internship, I am honing my expertise in data engineering and embracing best practices in big data, alongside gaining proficiency in cloud technologies like Databricks and Microsoft Azure. My focus on projects involving object detection has further deepened my understanding of practical applications in the field."
+        }
+    },
+    "international_experience": {
+        "fr": "Au fil de mes expériences précédentes, j'ai eu l'opportunité d'évoluer dans divers contextes, ce qui m'a permis de grandir professionnellement. Mon expérience de stage en Thaïlande, à l'Université de Bangkok, m'a offert une immersion enrichissante dans la culture et le milieu de travail thaïlandais. De plus, un programme d'échange captivant en Norvège, à l'Université de Bergen, m'a permis de perfectionner considérablement mon anglais.",
+        "en": "Through my previous experiences, I have had the opportunity to grow in various contexts, which has allowed me to develop professionally. My internship experience in Thailand, at Bangkok University, provided me with an enriching immersion in Thai culture and work environment. Additionally, an engaging exchange program in Norway, at the University of Bergen, enabled me to significantly improve my English.",
+        "VIE": {
+            "fr": "Travailler dans un environnement diversifié revêt une grande importance à mes yeux. Au fil de mes expériences précédentes, j'ai eu l'opportunité d'évoluer dans divers contextes, et c'est dans cette diversité que je m'épanouis le mieux. Mon expérience de stage en Thaïlande, à l'Université de Bangkok, m'a offert une immersion enrichissante dans la culture et le milieu de travail thaïlandais. De plus, un programme d'échange captivant en Norvège, à l'Université de Bergen, a renforcé ma volonté de travailler dans des contextes variés. Je suis convaincu que rejoindre votre entreprise - une référence française - serait une étape majeure dans le développement de ma carrière en {{company_country}}.",
+            "en": "Working in a diverse environment is of great importance to me. My previous experiences have allowed me to grow in various contexts, and it is in this diversity that I thrive the most. During my internship at Bangkok University in Thailand, I had the opportunity to immerse myself in Thai culture and work environment. Furthermore, an engaging exchange program at the University of Bergen in Norway reinforced my desire to work in diverse settings. I am convinced that joining your company, a leader in France, would be a significant step in advancing my career in {{company_country}}."
+        }
+    },
+    "company_interest": {
+        "fr": "Je postule pour un poste de {{job_name}} chez {{company}} . Complète cette template sans trop en faire(ne soit pas trop long). Tu dois montrer ma motivation: \n\nTEMPLATE:\n'Je suis particulièrement attiré par ce poste car {{ trouvez une raison spécifique liée au poste }}. Mon intérêt pour le secteur de {{ secteur }} s'est développé parce que {{ explique pourquoi avec un exemple ou une expérience personnelle si possible }}. De plus, {{ trouvez une raison spécifique liée à la mission ou à l'entreprise }} renforce mon enthousiasme pour cette opportunité. Travailler au sein d'une entreprise aussi réputée que {{ nom de l'entreprise }} me semble être l'opportunité idéale pour commencer ma carrière.'\n\nJOB DESCRIPTION:",
+        "en": "I am applying for a {{job_name}} position at {{company}}. Complete this template without being too elaborate (don't be too lengthy). You must show my motivation: \n\nTEMPLATE:\n'I am particularly drawn to this position because {{ insert a specific reason related to the job }}. My interest in the {{ sector }} field has grown because {{ explain why, ideally with an example or personal experience }}. Furthermore, {{ insert a specific reason related to the role or company }} amplifies my enthusiasm for this opportunity. Working within a reputable company such as {{ company name }} seems to be the ideal opportunity to start my career.'\n\nJOB DESCRIPTION:",
+        "VIE": {
+            "fr": "Je postule pour un poste de {{job_name}} chez {{company_name}} . Complète cette template sans trop en faire (soit très concis). Tu dois montrer ma motivation: \n\nTEMPLATE:\n'Je suis particulièrement attiré par ce poste car {{ trouvez une raison spécifique liée au poste }}. Mon intérêt pour le secteur de {{ secteur }} s'est développé parce que {{ explique pourquoi avec un exemple ou une expérience personnelle si possible }}. De plus, {{ trouvez une raison spécifique liée à la mission ou à l'entreprise }} renforce mon enthousiasme pour cette opportunité. '\n\nJOB DESCRIPTION:",
+            "en": "I am applying for a {{job_name}} position at {{company_name}}. Complete this template without being too elaborate (keep it concise). You must demonstrate my motivation:\n\nTEMPLATE:\n'I am particularly drawn to this position because {{ insert a specific reason related to the job }}. My interest in the {{ sector }} field developed because {{ explain why, ideally with an example or a personal experience if possible }}. Moreover, {{ insert a specific reason related to either the job duties or the company }} further fuels my enthusiasm for this opportunity.'\n\nJOB DESCRIPTION:"
+        }
+    },
+    "conclusion": {
+        "fr": "Je vous remercie de votre temps et de votre considération, et j'attends avec impatience de vos nouvelles prochainement.",
+        "en": "I am available for an interview at your earliest convenience and would welcome the opportunity to discuss in more detail how my experiences align with the needs of your team. Thank you for considering my application. I am eager to bring my skills, energy, and enthusiasm to {{company_name}} and contribute to the organization's continued success."
+    },
+    "VIE_message": {
+        "fr": "Cher recruteur,\n\nJe vous adresse ma candidature pour l'opportunité VIE {{job_name}} chez {{company_name}} à {{company_city}}, référencée {{reference}} Vous trouverez en pièces jointes ma lettre de motivation et mon CV.\n\nJe vous remercie par avance de l’attention que vous porterez à ma candidature et suis impatient de pouvoir contribuer à la réussite de votre entreprise de renom.\n\nCordialement,\n\n{{personal_first_name}} {{personal_last_name}}",
+        "en": "Dear recruiter,\n\nI hope this email finds you well. Please find attached my cover letter and resume for the VIE {{job_name}} opportunity at {{company_name}} in {{company_city}}, as advertised under the reference {{reference}}.\n\nThank you for considering my application. I look forward to the possibility of contributing to your esteemed organization.\n\nWarm regards,\n\n{{personal_first_name}} {{personal_last_name}}"
+    }
+}
