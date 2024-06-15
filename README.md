@@ -1,5 +1,6 @@
 
 # Cover Letter generator
+![letter_censored](https://github.com/SkowKyubu/CoverLetterGenerator/assets/120100522/dc07b528-0ff0-473b-a0c5-9b346c9a03fc)
 
 Simplify Your Applications by Automating Cover Letter Creation.
 This program is designed for personal use and allows you to generate cover letters with the following structure:
