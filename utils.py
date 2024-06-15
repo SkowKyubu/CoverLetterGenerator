@@ -87,6 +87,7 @@ def update_company_info(json_file="content.json"):
         # Ask for company information
         print(f"{Bcolors.BOLD}{Bcolors.UNDERLINE}Fill with the company information{Bcolors.ENDC}: ")
         name = input("Name of the company: ")
+        sector = input("Sector: ")
         country = input("Country: ")
         city = input("City: ")
         job_name = input("Job name: ")
@@ -96,6 +97,7 @@ def update_company_info(json_file="content.json"):
 
         # Update the personal information in the JSON structure
         company_info['name'] = name
+        company_info['sector'] = sector
         company_info['location']['country'] = country
         company_info['location']['city'] = city
         company_info['job']['name'] = job_name

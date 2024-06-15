@@ -35,6 +35,7 @@ class CoverLetter:
         location = company_info.get('location', {})
         job = company_info.get('job', {})
         self.__company_name = company_info.get('name', 'Unknown')
+        self.__company_sector = company_info.get('sector', 'Unknown')
         self.__company_country = location.get('country', 'Unknown')
         self.__company_city = location.get('city', 'Unknown')
         self.__contract_type = job.get('contract_type', 'Unknown')
@@ -96,18 +97,23 @@ class CoverLetter:
         if self.__contract_type == 'VIE':
             vie_info = self.__content['introduction']['VIE'][self.__language]
             introduction += ' ' + vie_info
-        return introduction.replace("{{company_name}}", self.__company_name)
+        introduction = introduction.replace("{{company_name}}", self.__company_name)
+        introduction = introduction.replace("{{company_sector}}", self.__company_sector)
+        return introduction
 
     def _get_presentation(self):
         """Return the presentation paragraph of the cover letter based on the language and contract type."""
-        return self.__content['presentation']['data science'][self.__language]
+        presentation = self.__content['presentation']['data science'][self.__language]
+        return presentation.replace("{{company_name}}", self.__company_name)
 
     def _get_international_experience(self):
         """Return the international experience paragraph of the cover letter based on the language and contract type."""
         international_experience = self.__content['international_experience'][self.__language]
         if self.__contract_type == 'VIE':
             international_experience = self.__content['international_experience']['VIE'][self.__language]
-        return international_experience.replace("{{company_country}}", self.__company_country)
+        international_experience = international_experience.replace("{{company_country}}", self.__company_country)
+        international_experience = international_experience.replace("{{company_name}}", self.__company_name)
+        return international_experience
 
     def _get_company_interest(self):
         """Return the company interest paragraph"""
@@ -118,6 +124,7 @@ class CoverLetter:
         company_interest = company_interest.replace("{{company_name}}", self.__company_name)
         company_interest = company_interest.replace("{{job_name}}", self.__job_name)
         company_interest = company_interest.replace("{{company_country}}", self.__company_country)
+        company_interest = company_interest.replace("{{company_sector}", self.__company_sector)
         prompt = company_interest + self.__content['company_info']['job']['description']
         output = get_completion(prompt=prompt, client=self.__client_openai)
         return output
