@@ -156,8 +156,10 @@ class CoverLetter:
             "end_politeness": self._get_end_politeness()
         }
 
-    def __message_VIE(self):
-        message = self.__content['VIE_message'][self.__language]
+    def __email_for_recruiter(self):
+        message = self.__content['email_for_recruiter'][self.__language]
+        if self.__contract_type == 'VIE':
+            message = self.__content['email_for_recruiter']['VIE'][self.__language]
         message = message.replace("{{job_name}}", self.__job_name)
         message = message.replace("{{company_name}}", self.__company_name)
         message = message.replace("{{company_city}}", self.__company_city)
@@ -196,9 +198,8 @@ class CoverLetter:
         convert(docx_filename, pdf_filename)
 
         # Print message for VIE
-        if self.__contract_type == "VIE":
-            print(f"\n{Bcolors.BOLD}{Bcolors.UNDERLINE}VIE message: {Bcolors.ENDC}: ")
-            print(self.__message_VIE())
+        print(f"\n{Bcolors.BOLD}{Bcolors.UNDERLINE}Email for recruiter: {Bcolors.ENDC}: ")
+        print(self.__email_for_recruiter())
         return docx_filename, pdf_filename
 
     def display(self):

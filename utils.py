@@ -126,7 +126,6 @@ def get_content(json_file="C:/Users/artga/Desktop/scrapp_test/content.json"):
         print("Error: Could not read company information from the JSON file.")
         return None
 
-
 def test_api(api_key):
     try:
         print(f"Attempting to connect with API key: {api_key[:4]}... (truncated for security)")
